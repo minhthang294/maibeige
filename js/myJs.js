@@ -16,10 +16,10 @@ function firstQuestion(){
     Swal.fire({
         title: 'Chào Mai! Hello my Moon! Bonjour ma Lune!',
         text: 'Trong một lúc hâm đơ anh đã làm một cái trò ngớ ngẩn này để em cười, anh ngáo mà :))',
-        imageUrl: '../img/cuteCat.jpg',
+        imageUrl: './img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("../img/iput-bg.jpg")',
+        background: '#fff url("./img/iput-bg.jpg")',
         imageAlt: 'Custom image',
       }).then(function(){
         $('.content').show(200);
@@ -28,7 +28,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('../sound/duck.mp3');
+    var audio = new Audio('./sound/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -42,7 +42,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('../sound/Swish1.mp3');
+    var audio = new Audio('./sound/Swish1.mp3');
     audio.play();
     var x = Math.random() * 500;
     var y = Math.random() * 500;
@@ -85,7 +85,7 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('../sound/tick.mp3');
+    var audio = new Audio('./sound/tick.mp3');
     audio.play();
     Swal.fire({
         title: 'Nói lý do em thích anh đi :))',
@@ -96,7 +96,7 @@ $('#yes').click(function() {
         background: '#fff url("../img/iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
-              url("../img/giphy2.gif")
+              url("./img/giphy2.gif")
               left top
               no-repeat
             `,
